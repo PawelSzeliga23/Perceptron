@@ -1,0 +1,26 @@
+.background {
+    -fx-background-color: #313030;
+}
+
+.data-pane {
+    -fx-background-color: #3f3e3e;
+    -fx-background-radius: 20px;
+}
+.button{
+    -fx-background-color: #313030;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+.button:hover{
+    -fx-background-color: #464646;
+}
+.button:pressed{
+    -fx-background-color: #595858;
+}
+.learn-pane{
+    -fx-background-color: #313030;
+}
+.axis-label{
+    -fx-text-fill: #FFFFFF;
+}

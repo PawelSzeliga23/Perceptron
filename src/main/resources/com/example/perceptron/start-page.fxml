@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="800.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.perceptron.StartPageController">
+    <children>
+        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="580.0" prefWidth="780.0" styleClass="data-pane" stylesheets="@style.css">
+            <children>
+                <VBox layoutX="111.0" layoutY="14.0" prefHeight="523.0" prefWidth="559.0">
+                    <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Button fx:id="trainingButton" layoutY="35.0" mnemonicParsing="false" onAction="#chooseFile" prefHeight="70.0" prefWidth="558.0" stylesheets="@style.css" text="Choose training data file" textOverrun="LEADING_ELLIPSIS" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Button fx:id="testButton" layoutY="35.0" mnemonicParsing="false" onAction="#chooseFile" prefHeight="70.0" prefWidth="558.0" stylesheets="@style.css" text="Choose test data file" textOverrun="LEADING_ELLIPSIS" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <AnchorPane layoutX="1.0" layoutY="32.0" prefHeight="70.0" prefWidth="558.0" styleClass="learn-pane" stylesheets="@style.css">
+                                    <children>
+                                        <Slider fx:id="learningRateSlider" layoutX="23.0" layoutY="14.0" majorTickUnit="0.25" max="1.0" minorTickCount="4" prefHeight="60.0" prefWidth="513.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="0.5" />
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <AnchorPane layoutX="1.0" layoutY="35.0" prefHeight="70.0" prefWidth="558.0" styleClass="learn-pane" stylesheets="@style.css">
+                                    <children>
+                                        <TextField fx:id="epochTextFiled" layoutX="53.0" layoutY="23.0" prefHeight="25.0" prefWidth="453.0" promptText="Number of epoch" />
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="0.0" prefWidth="559.0" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Button fx:id="nextButton" layoutY="35.0" mnemonicParsing="false" onAction="#next" prefHeight="70.0" prefWidth="558.0" stylesheets="@style.css" text="Next" textOverrun="LEADING_ELLIPSIS" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.perceptron.ProgramPageController">
+   <children>
+      <LineChart fx:id="epochChart" layoutX="12.0" layoutY="14.0" prefHeight="484.0" prefWidth="776.0" styleClass="data-pane" stylesheets="@style.css">
+        <xAxis>
+          <NumberAxis label="Epoch" prefHeight="30.0" prefWidth="708.0" side="BOTTOM" tickLabelFill="WHITE" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Accuracy [%]" side="LEFT" tickLabelFill="WHITE" />
+        </yAxis>
+      </LineChart>
+      <AnchorPane layoutX="12.0" layoutY="507.0" prefHeight="79.0" prefWidth="776.0" styleClass="data-pane" stylesheets="@style.css">
+         <children>
+            <Button fx:id="predictButton" layoutX="342.0" layoutY="18.0" mnemonicParsing="false" onAction="#predictData" prefHeight="43.0" prefWidth="93.0" text="Predict" />
+            <TextField fx:id="inputLabel" layoutX="21.0" layoutY="27.0" prefHeight="25.0" prefWidth="302.0" promptText="Enter data to predict separator = &quot;,&quot;" />
+            <Label fx:id="predictLabel" layoutX="449.0" layoutY="17.0" prefHeight="44.0" prefWidth="313.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
